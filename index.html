@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,19 +16,449 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <header>
-    <img
-      src="./image/logo.png"
-      srcset="./image/logo@2x.png"
-      alt="logo"
-      width="199"
-      class="header-logo"
-    />
-    <button type="button" class="burger-button">
-      <svg class="burger-button-icon" width="20" height="12">
-        <use href="./image/icon.svg#icon-burger-svg"></use>
-      </svg>
-    </button>
-  </header>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav-link">
+          <a href="./index.html" class="logo">
+            <img
+              src="./image/logo.png"
+              srcset="./image/logo@2x.png"
+              alt="logo"
+              width="199"
+              class="header-logo"
+            />
+          </a>
+          <ul class="nav-link">
+            <li>
+              <a href="./index.html" class="nav-link-item current">Home</a>
+            </li>
+            <li><a href="" class="nav-link-item">About us</a></li>
+            <li><a href="" class="nav-link-item">How it’s made?</a></li>
+            <li><a href="" class="nav-link-item">Our products</a></li>
+            <li><a href="" class="nav-link-item">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <button type="button" class="burger-button">
+            <svg class="burger-button-icon" width="20" height="12">
+              <use href="./image/icon.svg#icon-burger-svg"></use>
+            </svg>
+          </button>
+
+          <button type="button" class="header-buy-btn">
+            Buy now
+            <svg class="buy-btn-svg" width="7" height="10">
+              <use href="./image/icon.svg#icon-btn-svg"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-icecream-wrap">
+          <div class="round-wrap">
+            <svg
+              width="264"
+              height="344"
+              viewBox="0 0 264 344"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <ellipse cx="173" cy="172" rx="173" ry="172" fill="#FFA5BA" />
+            </svg>
+          </div>
+          <picture class="hero-icecream">
+            <source
+              srcset="./image/icecream.png 1x, ./image/icecream@2x.png"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./image/icecream-tab.png 1x, ./image/icecream-tab@2x.png"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./image/icecream-mob.png 1x, ./image/icecream-mob@2x.png"
+              media="(max-width: 768px)"
+            />
+            <img
+              src="./image/icecream.png"
+              alt="icecream"
+              class="hero-icecream"
+            />
+          </picture>
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-title">ice cream made with passion</h1>
+          <div class="hero-btn-container">
+            <button type="button" class="products-btn">Products</button>
+            <button type="button" class="made-btn">How it’s made?</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products-section hidden">
+      <div class="container">
+        <p class="products-text">100% natural</p>
+        <h2 class="products-section-title">products</h2>
+        <ul class="products-list">
+          <li class="products-list-item">
+            <picture>
+              <source
+                srcset="
+                  ./image/prod-icecream.png    1x,
+                  ./image/prod-icecream@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./image/prod-icecream-tab.png    1x,
+                  ./image/prod-icecream-tab@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./image/prod-icecream-mob.png    1x,
+                  ./image/prod-icecream-mob@2x.png 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./image/prod-icecream.png"
+                alt="icecream"
+                class="products-item-img"
+              />
+            </picture>
+            <div class="prod-icecream-wrap">
+              <h3 class="product-item-title">ice cream</h3>
+              <svg width="26" height="6">
+                <use href="./image/icon.svg#icon-points"></use>
+              </svg>
+              <p class="product-item-text">
+                Indulge in our rich and creamy ice cream, handcrafted with
+                all-natural ingredients and available in a variety of flavors.
+              </p>
+              <button class="product-item-btn">
+                <img
+                  src="./image/btn-arrow-right.png"
+                  srcset="./image/btn-arrow-right@2x.png"
+                  class="prod-btn-arrow"
+                />
+              </button>
+            </div>
+          </li>
+          <li class="products-list-item">
+            <picture>
+              <source
+                srcset="./image/icecoffee.png 1x, ./image/icecoffee@2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./image/icecoffee-tab.png    1x,
+                  ./image/icecoffee-tab@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./image/icecoffee-mob.png    1x,
+                  ./image/icecoffee-mob@2x.png 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./image/icecoffee.png"
+                alt="icecoffee"
+                class="products-item-img"
+              />
+            </picture>
+            <div class="prod-icecoffee-wrap">
+              <h3 class="product-item-title">ice coffee</h3>
+              <svg width="26" height="6">
+                <use href="./image/icon.svg#icon-points"></use>
+              </svg>
+              <p class="product-item-text">
+                Refresh and energize with our perfectly brewed iced coffee, made
+                with high-quality beans and served over ice.
+              </p>
+              <button class="product-item-btn">
+                <img
+                  src="./image/btn-arrow-right.png"
+                  srcset="./image/btn-arrow-right@2x.png"
+                  class="prod-btn-arrow"
+                />
+              </button>
+            </div>
+          </li>
+          <li class="products-list-item">
+            <picture>
+              <source
+                srcset="./image/milkshake.png 1x, ./image/milkshake@2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./image/milkshake-tab.png    1x,
+                  ./image/milkshake-tab@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./image/milkshake-mob.png    1x,
+                  ./image/milkshake-mob@2x.png 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./image/milkshake.png"
+                alt="milkshake"
+                class="products-item-img"
+              />
+            </picture>
+            <div class="prod-milkshake-wrap">
+              <h3 class="product-item-title">milkshakes</h3>
+              <svg width="26" height="6">
+                <use href="./image/icon.svg#icon-points"></use>
+              </svg>
+              <p class="product-item-text">
+                Satisfy your sweet tooth with our thick, made with premium ice
+                cream, topped with whipped cream and your favorite toppings.
+              </p>
+              <button class="product-item-btn">
+                <img
+                  src="./image/btn-arrow-right.png"
+                  srcset="./image/btn-arrow-right@2x.png"
+                  class="prod-btn-arrow"
+                />
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="made-section hidden">
+      <div class="container">
+        <p class="made-section-text">tradition and love</p>
+        <h2 class="made-section-title">how it’s made?</h2>
+        <picture>
+          <source
+            srcset="./image/made-img.png 1x, ./image/made-img@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./image/made-img-tab.png 1x, ./image/made-img-tab@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./image/made-img-mob.png 1x, ./image/made-img-mob@2x.png 2x"
+            media="(max-width: 768px)"
+          />
+          <img
+            src="./image/made-img.png"
+            alt="made-img"
+            class="made-section-img"
+          />
+        </picture>
+        <p class="made-text1">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="made-text2">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <button type="button" class="read-more-btn">
+          Read more
+          <svg><use href="./image/icon.svg#icon-btn-svg"></use></svg>
+        </button>
+        <ul class="made-list">
+          <li class="made-list-item">
+            <svg>
+              <use href="./image/icon.svg#icon-milk"></use>
+            </svg>
+            <h3 class="made-item-title">721</h3>
+            <p class="made-item-text">
+              At 721 Cow, we're passionate about producing the highest quality
+              ice cream possible.
+            </p>
+          </li>
+          <li class="made-list-item">
+            <svg>
+              <use href="./image/icon.svg#on-fruits"></use>
+            </svg>
+            <h3 class="made-item-title">16kg</h3>
+            <p class="made-item-text">
+              You can be sure you're getting a scoop of the freshest ice cream
+              around.
+            </p>
+          </li>
+          <li class="made-list-item">
+            <svg>
+              <use href="./image/icon.svg#icon-ingrd"></use>
+            </svg>
+            <h3 class="made-item-title">84</h3>
+            <p class="made-item-text">
+              We use only the freshest, locally-sourced ingredients to make our
+              84 unique and delicious flavors.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="clients-section hidden">
+      <div class="container">
+        <picture>
+          <source
+            srcset="./image/products-pic.png 1x, ./image/products-pic@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./image/products-pic-tab.png    1x,
+              ./image/products-pic-tab@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./image/products-pic-mob.png    1x,
+              ./image/products-pic-mob@2x.png 2x
+            "
+            media="(max-width: 768px)"
+          />
+          <img src="./image/products-pic.png" alt="products" />
+        </picture>
+      </div>
+    </section>
+    <section class="feedback-section hidden">
+      <div class="container">
+        <img src="./image/client.svg" />
+        <svg>
+          <use href="./image/icon.svg#icon-untitled"></use>
+        </svg>
+        <p class="client-feedback">
+          I love visiting your cafe. You prepare the most delicious ice cream in
+          Los Angeles! In addition, you have beautiful serving, cozy atmosphere
+          and polite staff.
+        </p>
+        <svg>
+          <use href="./image/icon.svg#icon-points-rose"></use>
+        </svg>
+        <p>Emily, Los Angeles</p>
+      </div>
+    </section>
+    <section class="info-section hidden">
+      <div class="container">
+        <ul class="info-list">
+          <li class="info-list-item">
+            <div class="info-item-container">
+              <h3 class="cafe">CAFE</h3>
+              <h4 class="city">Chicago</h4>
+              <p class="info-text">
+                Handcrafted coffee, baked goods, and premium ice cream.
+              </p>
+              <h4 class="days">Monday - Friday</h4>
+              <p class="hours">06:00 AM - 10:00 PM</p>
+              <h4 class="days">Saturday - Sunday</h4>
+              <p class="hours">08:00 AM - 16:00 PM</p>
+              <address class="contacts">
+                <li class="contact-list-item">
+                  <a href="tel:+61(0)383766284" class="contact-list-item-link"
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <ul class="contact-list">
+                  <li class="contact-list-item">
+                    <a
+                      href="mailto:noreply@envato.com"
+                      class="contact-list-item-link"
+                      >noreply@envato.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </li>
+          <li class="info-list-item">
+            <div class="info-item-container">
+              <h3 class="cafe foodtruck">FOODTRUCK</h3>
+              <h4 class="city">Los Angeles</h4>
+              <p>Fusion cuisine and refreshing ice cream made with passion.</p>
+              <h4 class="days">Monday - Friday</h4>
+              <p class="hours">06:00 AM - 10:00 PM</p>
+              <h4 class="days">Saturday - Sunday</h4>
+              <p class="hours">08:00 AM - 16:00 PM</p>
+              <address class="contacts">
+                <li class="contact-list-item">
+                  <a href="tel:+61(0)383766284" class="contact-list-item-link"
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <ul class="contact-list">
+                  <li class="contact-list-item">
+                    <a
+                      href="mailto:noreply@envato.com"
+                      class="contact-list-item-link"
+                      >noreply@envato.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </li>
+          <li class="info-list-item">
+            <div class="info-item-container">
+              <h3 class="cafe">CAFE</h3>
+              <h4 class="city">New York</h4>
+              <p class="info-text">
+                Specialty teas, artisanal pastries, mouth-watering ice cream.
+              </p>
+              <h4 class="days">Monday - Friday</h4>
+              <p class="hours">06:00 AM - 10:00 PM</p>
+              <h4 class="days">Saturday - Sunday</h4>
+              <p class="hours">08:00 AM - 16:00 PM</p>
+              <address class="contacts">
+                <li class="contact-list-item">
+                  <a href="tel:+61(0)383766284" class="contact-list-item-link"
+                    >+61(0) 383 766 284</a
+                  >
+                </li>
+                <ul class="contact-list">
+                  <li class="contact-list-item">
+                    <a
+                      href="mailto:noreply@envato.com"
+                      class="contact-list-item-link"
+                      >noreply@envato.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="locations-button">
+          Our Locations
+          <svg><use href="./image/icon.svg#icon-btn-svg"></use></svg>
+        </button>
+        <button type="button" class="franchise-button">
+          Franchise
+          <svg><use href="./image/icon.svg#icon-btn-svg"></use></svg>
+        </button>
+      </div>
+    </section>
+    <footer class="footer hidden">
+      <div class="container">
+        <p class="footer-text">homemade ice cream made</p>
+        <h2 class="footer-title">with passion</h2>
+      </div>
+    </footer>
+  </body>
 </html>
